@@ -2,6 +2,21 @@
 
 All notable PantryPilot configuration-management changes are recorded here.
 
+## [1.1.0] - 2026-08-04
+
+### Added
+
+- Deterministic allergen-conflict detection for generated recipe output.
+- Grocery aggregation logic for canonical item names and units.
+- Inclusive pantry-expiry window check for boundary-date testing.
+- Regression tests covering safety filtering, grocery aggregation, and expiry logic.
+
+### Configuration Baseline
+
+- Baseline tag: `v1.1.0`
+- Release type: Controlled feature-branch update
+- Change authority: Individual project owner
+
 ## [1.0.0] - 2026-07-14
 
 ### Added
