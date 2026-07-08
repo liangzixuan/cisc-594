@@ -1,0 +1,14 @@
+# Local editor and assistant state
+.idea/workspace.xml
+.claude/settings.local.json
+
+# Operating-system metadata
+.DS_Store
+
+# Local dependency and Python build state
+node_modules
+__pycache__/
+.pytest_cache/
+.venv/
+*.pyc
+*.log

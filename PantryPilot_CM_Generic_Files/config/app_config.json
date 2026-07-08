@@ -1,0 +1,21 @@
+{
+  "app_name": "PantryPilot",
+  "baseline_version": "1.1.0",
+  "release_name": "Safety & Grocery Controls",
+  "environment": "development",
+  "features": {
+    "profile_constraints": true,
+    "recipe_library": true,
+    "weekly_meal_planning": true,
+    "grocery_list_generation": true,
+    "ai_substitutions": true,
+    "nutrition_optimization": false,
+    "pantry_aware_planning": false
+  },
+  "quality_gates": {
+    "unit_tests_required": true,
+    "pull_request_required": true,
+    "review_required": true,
+    "ci_required": true
+  }
+}
