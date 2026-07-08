@@ -1,0 +1,262 @@
+{"kind":"deck","id":"pr/m8uyaz","name":"Deck"}
+{"kind":"layout","layoutId":"d6d8c2e1-1167-490e-aa4a-6aaa078bec87","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"8b648b3d-7acb-4b27-9628-18f7db2e4f79","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/ccnr58","slide":1,"title":"PantryPilot","textShapes":11}
+{"kind":"textbox","id":"sh/zidonyd0","slide":1,"text":"PantryPilot","textPreview":"PantryPilot","textChars":11,"textLines":1,"bbox":[54,76,760,80]}
+{"kind":"textbox","id":"sh/s36hcrmh","slide":1,"text":"Final Project Presentation","textPreview":"Final Project Presentation","textChars":26,"textLines":1,"bbox":[54,168,620,38]}
+{"kind":"textbox","id":"sh/hoza1gvy","slide":1,"text":"Smart meal and grocery planning with safety-aware software quality controls","textPreview":"Smart meal and grocery planning with safety-aware software quality controls","textChars":75,"textLines":1,"bbox":[54,224,860,58]}
+{"kind":"shape","id":"sh/ap4r65wj","slide":1,"bbox":[54,332,342,138]}
+{"kind":"shape","id":"sh/za1gvy90","slide":1,"bbox":[444,332,342,138]}
+{"kind":"shape","id":"sh/svu9knih","slide":1,"bbox":[834,332,342,138]}
+{"kind":"textbox","id":"sh/hgn29gr2","slide":1,"text":"System","textPreview":"System","textChars":6,"textLines":1,"bbox":[78,356,240,26]}
+{"kind":"textbox","id":"sh/adsji5sn","slide":1,"text":"Meal plans, substitutions, pantry use, and grocery lists","textPreview":"Meal plans, substitutions, pantry use, and grocery lists","textChars":56,"textLines":1,"bbox":[78,394,280,48]}
+{"kind":"textbox","id":"sh/3ylc7u54","slide":1,"text":"Quality focus","textPreview":"Quality focus","textChars":13,"textLines":1,"bbox":[468,356,240,26]}
+{"kind":"textbox","id":"sh/bat47y1k","slide":1,"text":"Risk, CM, traceability, and system-level testing","textPreview":"Risk, CM, traceability, and system-level testing","textChars":48,"textLines":1,"bbox":[468,394,280,48]}
+{"kind":"textbox","id":"sh/mp0bi9s3","slide":1,"text":"Prepared by","textPreview":"Prepared by","textChars":11,"textLines":1,"bbox":[858,356,240,26]}
+{"kind":"textbox","id":"sh/tgfmlkjm","slide":1,"text":"Zixuan Liang\nCISC 594","textPreview":"Zixuan Liang | CISC 594","textChars":21,"textLines":2,"bbox":[858,394,280,54]}
+{"kind":"textbox","id":"sh/4vmtwra5","slide":1,"text":"Prepared by Zixuan Liang","textPreview":"Prepared by Zixuan Liang","textChars":24,"textLines":1,"bbox":[54,672,360,22]}
+{"kind":"textbox","id":"sh/bm58z25k","slide":1,"text":"CISC 594 - Final Project Presentation - 1/14","textPreview":"CISC 594 - Final Project Presentation - 1/14","textChars":44,"textLines":1,"bbox":[796,672,430,22]}
+{"kind":"notes","id":"nt/ccnr58","slide":1,"text":"Open with the central message: PantryPilot is useful only if the intelligent parts are bounded by traceable and testable quality controls."}
+{"kind":"slide","id":"sl/2p1dte","slide":2,"title":"Required final presentation sections","textShapes":16}
+{"kind":"textbox","id":"sh/qh0fepkz","slide":2,"text":"Required final presentation sections","textPreview":"Required final presentation sections","textChars":36,"textLines":1,"bbox":[54,32,600,24]}
+{"kind":"textbox","id":"sh/18jqh0fe","slide":2,"text":"Assignment coverage map","textPreview":"Assignment coverage map","textChars":23,"textLines":1,"bbox":[54,68,1000,58]}
+{"kind":"shape","id":"sh/8nqxs72x","slide":2,"bbox":[54,140,1172,1]}
+{"kind":"textbox","id":"sh/jqh0fepk","slide":2,"text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[54,178,42,42]}
+{"kind":"shape","id":"sh/q5o7qpg3","slide":2,"bbox":[116,198,104,1]}
+{"kind":"textbox","id":"sh/1w7mp0bi","slide":2,"text":"Project introduction and system features","textPreview":"Project introduction and system features","textChars":40,"textLines":1,"bbox":[246,178,820,42]}
+{"kind":"textbox","id":"sh/8bat47y1","slide":2,"text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[54,256,42,42]}
+{"kind":"shape","id":"sh/ji5snelo","slide":2,"bbox":[116,276,104,1]}
+{"kind":"textbox","id":"sh/uxc3ylc7","slide":2,"text":"Role of each group member","textPreview":"Role of each group member","textChars":25,"textLines":1,"bbox":[246,256,820,42]}
+{"kind":"textbox","id":"sh/gn29gr2p","slide":2,"text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[54,334,42,42]}
+{"kind":"shape","id":"sh/58z25kb6","slide":2,"bbox":[116,354,104,1]}
+{"kind":"textbox","id":"sh/yhgn29gr","slide":2,"text":"Risk identification and tracking","textPreview":"Risk identification and tracking","textChars":32,"textLines":1,"bbox":[246,334,820,42]}
+{"kind":"textbox","id":"sh/n29gr2p8","slide":2,"text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[54,412,42,42]}
+{"kind":"shape","id":"sh/gbq1oryt","slide":2,"bbox":[116,432,104,1]}
+{"kind":"textbox","id":"sh/5wjudg7a","slide":2,"text":"Configuration management approach","textPreview":"Configuration management approach","textChars":33,"textLines":1,"bbox":[246,412,820,42]}
+{"kind":"textbox","id":"sh/y90je9cv","slide":2,"text":"5","textPreview":"5","textChars":1,"textLines":1,"bbox":[54,490,42,42]}
+{"kind":"shape","id":"sh/nuxc3ylc","slide":2,"bbox":[116,510,104,1]}
+{"kind":"textbox","id":"sh/cbulwval","slide":2,"text":"System testing approach and outcome","textPreview":"System testing approach and outcome","textChars":35,"textLines":1,"bbox":[246,490,820,42]}
+{"kind":"shape","id":"sh/5sneloj2","slide":2,"bbox":[940,178,226,380]}
+{"kind":"textbox","id":"sh/5o7qpg3e","slide":2,"text":"Central message","textPreview":"Central message","textChars":15,"textLines":1,"bbox":[964,206,170,28]}
+{"kind":"textbox","id":"sh/g3ex0nux","slide":2,"text":"PantryPilot combines useful automation with disciplined SQA: high-risk behavior is identified, controlled, versioned, and tested.","textPreview":"PantryPilot combines useful automation with disciplined SQA: high-risk behavior is identified, controlled, versioned, and tested.","textChars":129,"textLines":1,"bbox":[964,256,172,170]}
+{"kind":"textbox","id":"sh/nih4byhg","slide":2,"text":"Prepared by Zixuan Liang","textPreview":"Prepared by Zixuan Liang","textChars":24,"textLines":1,"bbox":[54,672,360,22]}
+{"kind":"textbox","id":"sh/yxobm58z","slide":2,"text":"CISC 594 - Final Project Presentation - 2/14","textPreview":"CISC 594 - Final Project Presentation - 2/14","textChars":44,"textLines":1,"bbox":[796,672,430,22]}
+{"kind":"notes","id":"nt/2p1dte","slide":2,"text":"This slide previews exactly how the deck answers the prompt."}
+{"kind":"slide","id":"sl/ay5hmr","slide":3,"title":"Zixuan Liang","textShapes":12}
+{"kind":"textbox","id":"sh/i5sneloj","slide":3,"text":"Zixuan Liang","textPreview":"Zixuan Liang","textChars":12,"textLines":1,"bbox":[54,32,600,24]}
+{"kind":"textbox","id":"sh/pwb2hwfy","slide":3,"text":"Project introduction: why PantryPilot exists","textPreview":"Project introduction: why PantryPilot exists","textChars":44,"textLines":1,"bbox":[54,68,1000,58]}
+{"kind":"shape","id":"sh/0bi9s36h","slide":3,"bbox":[54,140,1172,1]}
+{"kind":"shape","id":"sh/7y1kre1w","slide":3,"bbox":[54,186,342,184]}
+{"kind":"shape","id":"sh/ed8v6psf","slide":3,"bbox":[54,186,6,184]}
+{"kind":"textbox","id":"sh/p4r65wju","slide":3,"text":"Planning friction","textPreview":"Planning friction","textChars":17,"textLines":1,"bbox":[72,204,306,28]}
+{"kind":"textbox","id":"sh/wjudg7ad","slide":3,"text":"Users often decide meals, check ingredients, and build grocery lists in separate tools.","textPreview":"Users often decide meals, check ingredients, and build grocery lists in separate tools.","textChars":87,"textLines":1,"bbox":[72,240,306,122]}
+{"kind":"shape","id":"sh/72x4nap4","slide":3,"bbox":[444,186,342,184]}
+{"kind":"shape","id":"sh/ih4byhgn","slide":3,"bbox":[444,186,6,184]}
+{"kind":"textbox","id":"sh/032lszqt","slide":3,"text":"Constraint complexity","textPreview":"Constraint complexity","textChars":21,"textLines":1,"bbox":[462,204,306,28]}
+{"kind":"textbox","id":"sh/tovahoza","slide":3,"text":"Allergies, disliked ingredients, budgets, nutrition goals, and preferences can conflict.","textPreview":"Allergies, disliked ingredients, budgets, nutrition goals, and preferences can conflict.","textChars":88,"textLines":1,"bbox":[462,240,306,122]}
+{"kind":"shape","id":"sh/ixczed8v","slide":3,"bbox":[834,186,342,184]}
+{"kind":"shape","id":"sh/bi9s36hc","slide":3,"bbox":[834,186,6,184]}
+{"kind":"textbox","id":"sh/0fepkzup","slide":3,"text":"Food waste","textPreview":"Food waste","textChars":10,"textLines":1,"bbox":[852,204,306,28]}
+{"kind":"textbox","id":"sh/p0bi9s36","slide":3,"text":"Pantry items expire while shopping decisions ignore what is already available at home.","textPreview":"Pantry items expire while shopping decisions ignore what is already available at home.","textChars":86,"textLines":1,"bbox":[852,240,306,122]}
+{"kind":"textbox","id":"sh/i9s36hcr","slide":3,"text":"PantryPilot answer","textPreview":"PantryPilot answer","textChars":18,"textLines":1,"bbox":[54,434,360,34]}
+{"kind":"textbox","id":"sh/bulwval8","slide":3,"text":"A smart meal and grocery planning system that maintains profiles, recipes, pantry inventory, weekly meal plans, AI substitutions, and consolidated grocery lists.","textPreview":"A smart meal and grocery planning system that maintains profiles, recipes, pantry inventory, weekly meal plans, AI substitutions, and con...","textChars":161,"textLines":1,"bbox":[54,480,1040,78]}
+{"kind":"textbox","id":"sh/0je9cvix","slide":3,"text":"Prepared by Zixuan Liang","textPreview":"Prepared by Zixuan Liang","textChars":24,"textLines":1,"bbox":[54,672,360,22]}
+{"kind":"textbox","id":"sh/t47y1kre","slide":3,"text":"CISC 594 - Final Project Presentation - 3/14","textPreview":"CISC 594 - Final Project Presentation - 3/14","textChars":44,"textLines":1,"bbox":[796,672,430,22]}
+{"kind":"notes","id":"nt/ay5hmr","slide":3,"text":"Introduce the project from the user's point of view and then bridge into quality concerns."}
+{"kind":"slide","id":"sl/5ihqul","slide":4,"title":"Project features","textShapes":9}
+{"kind":"textbox","id":"sh/yd0z6103","slide":4,"text":"Project features","textPreview":"Project features","textChars":16,"textLines":1,"bbox":[54,32,600,24]}
+{"kind":"textbox","id":"sh/90je9cvi","slide":4,"text":"System features and release scope","textPreview":"System features and release scope","textChars":33,"textLines":1,"bbox":[54,68,1000,58]}
+{"kind":"shape","id":"sh/gfmlkjm1","slide":4,"bbox":[54,140,1172,1]}
+{"kind":"shape","id":"sh/rmhk3q5o","slide":4,"bbox":[54,184,548,346]}
+{"kind":"textbox","id":"sh/y1kre1w7","slide":4,"text":"V1.0 baseline","textPreview":"V1.0 baseline","textChars":13,"textLines":1,"bbox":[80,212,270,34]}
+{"kind":"textbox","id":"sh/9s36hcrm","slide":4,"text":"- Profile and dietary constraints\n- Recipe library and normalized ingredients\n- Weekly meal planning\n- Consolidated grocery aggregation\n- Basic pantry-aware planning model","textPreview":"- Profile and dietary constraints | - Recipe library and normalized ingredients | - Weekly meal planning | - Consolidated grocery aggrega...","textChars":171,"textLines":5,"bbox":[84,270,456,196]}
+{"kind":"shape","id":"sh/g7adsji5","slide":4,"bbox":[658,184,548,346]}
+{"kind":"textbox","id":"sh/nih4byhg","slide":4,"text":"V1.1 safety and grocery controls","textPreview":"V1.1 safety and grocery controls","textChars":32,"textLines":1,"bbox":[684,212,410,34]}
+{"kind":"textbox","id":"sh/yxobm58z","slide":4,"text":"- Deterministic allergen conflict detection\n- Safety gate before AI output reaches the user\n- Expiry-window logic for pantry items\n- Grocery unit aggregation regression coverage\n- CI workflow for repeatable checks","textPreview":"- Deterministic allergen conflict detection | - Safety gate before AI output reaches the user | - Expiry-window logic for pantry items | ...","textChars":213,"textLines":5,"bbox":[688,270,456,196]}
+{"kind":"textbox","id":"sh/obm58z25","slide":4,"text":"Future V2 scope: nutrition optimizer, pantry-aware ranking, and generated recipes after the safety baseline is stable.","textPreview":"Future V2 scope: nutrition optimizer, pantry-aware ranking, and generated recipes after the safety baseline is stable.","textChars":118,"textLines":1,"bbox":[54,584,1060,34]}
+{"kind":"textbox","id":"sh/hwfyxobm","slide":4,"text":"Prepared by Zixuan Liang","textPreview":"Prepared by Zixuan Liang","textChars":24,"textLines":1,"bbox":[54,672,360,22]}
+{"kind":"textbox","id":"sh/65wjudg7","slide":4,"text":"CISC 594 - Final Project Presentation - 4/14","textPreview":"CISC 594 - Final Project Presentation - 4/14","textChars":44,"textLines":1,"bbox":[796,672,430,22]}
+{"kind":"notes","id":"nt/5ihqul","slide":4,"text":"Distinguish the completed course baseline from future intelligent features."}
+{"kind":"slide","id":"sl/wq054x","slide":5,"title":"System architecture","textShapes":23}
+{"kind":"textbox","id":"sh/nyd0z610","slide":5,"text":"System architecture","textPreview":"System architecture","textChars":19,"textLines":1,"bbox":[54,32,600,24]}
+{"kind":"textbox","id":"sh/cj6tovah","slide":5,"text":"Software design: safety-aware planning pipeline","textPreview":"Software design: safety-aware planning pipeline","textChars":47,"textLines":1,"bbox":[54,68,1000,58]}
+{"kind":"shape","id":"sh/54zidony","slide":5,"bbox":[54,140,1172,1]}
+{"kind":"shape","id":"sh/upwb2hwf","slide":5,"bbox":[54,226,160,174]}
+{"kind":"textbox","id":"sh/nap4r65w","slide":5,"text":"User profile","textPreview":"User profile","textChars":12,"textLines":1,"bbox":[66,246,136,30]}
+{"kind":"textbox","id":"sh/cvixczed","slide":5,"text":"Allergies, dislikes, nutrition targets","textPreview":"Allergies, dislikes, nutrition targets","textChars":38,"textLines":1,"bbox":[68,298,132,64]}
+{"kind":"textbox","id":"sh/5gbq1ory","slide":5,"text":"->","textPreview":"->","textChars":2,"textLines":1,"bbox":[216,302,30,26]}
+{"kind":"shape","id":"sh/u18jqh0f","slide":5,"bbox":[244,226,160,174]}
+{"kind":"textbox","id":"sh/jm1cfa9w","slide":5,"text":"Recipe data","textPreview":"Recipe data","textChars":11,"textLines":1,"bbox":[256,246,136,30]}
+{"kind":"textbox","id":"sh/b6xkf6dc","slide":5,"text":"Manual and external recipe inputs","textPreview":"Manual and external recipe inputs","textChars":33,"textLines":1,"bbox":[258,298,132,64]}
+{"kind":"textbox","id":"sh/il0rqd4v","slide":5,"text":"->","textPreview":"->","textChars":2,"textLines":1,"bbox":[406,302,30,26]}
+{"kind":"shape","id":"sh/tcj6tova","slide":5,"bbox":[434,226,160,174]}
+{"kind":"textbox","id":"sh/0rqd4vmt","slide":5,"text":"Normalize","textPreview":"Normalize","textChars":9,"textLines":1,"bbox":[446,246,136,30]}
+{"kind":"textbox","id":"sh/byhgn29g","slide":5,"text":"Ingredient names, quantities, units","textPreview":"Ingredient names, quantities, units","textChars":35,"textLines":1,"bbox":[448,298,132,64]}
+{"kind":"textbox","id":"sh/idonyd0z","slide":5,"text":"->","textPreview":"->","textChars":2,"textLines":1,"bbox":[596,302,30,26]}
+{"kind":"shape","id":"sh/t47y1kre","slide":5,"bbox":[624,226,160,174]}
+{"kind":"textbox","id":"sh/0je9cvix","slide":5,"text":"Plan","textPreview":"Plan","textChars":4,"textLines":1,"bbox":[636,246,136,30]}
+{"kind":"textbox","id":"sh/bulwval8","slide":5,"text":"Meals and grocery aggregation","textPreview":"Meals and grocery aggregation","textChars":29,"textLines":1,"bbox":[638,298,132,64]}
+{"kind":"textbox","id":"sh/i9s36hcr","slide":5,"text":"->","textPreview":"->","textChars":2,"textLines":1,"bbox":[786,302,30,26]}
+{"kind":"shape","id":"sh/6xkf6dcb","slide":5,"bbox":[814,226,160,174]}
+{"kind":"textbox","id":"sh/zed8v6ps","slide":5,"text":"Safety gate","textPreview":"Safety gate","textChars":11,"textLines":1,"bbox":[826,246,136,30]}
+{"kind":"textbox","id":"sh/oza1gvy9","slide":5,"text":"Allergen and expiry checks","textPreview":"Allergen and expiry checks","textChars":26,"textLines":1,"bbox":[828,298,132,64]}
+{"kind":"textbox","id":"sh/hk3q5o7q","slide":5,"text":"->","textPreview":"->","textChars":2,"textLines":1,"bbox":[976,302,30,26]}
+{"kind":"shape","id":"sh/65wjudg7","slide":5,"bbox":[1004,226,160,174]}
+{"kind":"textbox","id":"sh/zqtcj6to","slide":5,"text":"Output","textPreview":"Output","textChars":6,"textLines":1,"bbox":[1016,246,136,30]}
+{"kind":"textbox","id":"sh/obm58z25","slide":5,"text":"Meal plan and grocery list","textPreview":"Meal plan and grocery list","textChars":26,"textLines":1,"bbox":[1018,298,132,64]}
+{"kind":"textbox","id":"sh/hwfyxobm","slide":5,"text":"Design decision","textPreview":"Design decision","textChars":15,"textLines":1,"bbox":[54,474,220,30]}
+{"kind":"textbox","id":"sh/a9w3m94f","slide":5,"text":"Use AI only for suggestion value; keep safety decisions deterministic, reviewable, and testable.","textPreview":"Use AI only for suggestion value; keep safety decisions deterministic, reviewable, and testable.","textChars":96,"textLines":1,"bbox":[276,474,850,40]}
+{"kind":"textbox","id":"sh/zupwb2hw","slide":5,"text":"Prepared by Zixuan Liang","textPreview":"Prepared by Zixuan Liang","textChars":24,"textLines":1,"bbox":[54,672,360,22]}
+{"kind":"textbox","id":"sh/l0rqd4vm","slide":5,"text":"CISC 594 - Final Project Presentation - 5/14","textPreview":"CISC 594 - Final Project Presentation - 5/14","textChars":44,"textLines":1,"bbox":[796,672,430,22]}
+{"kind":"notes","id":"nt/wq054x","slide":5,"text":"The most important design choice is the separation of nondeterministic AI suggestions from deterministic safety gates."}
+{"kind":"slide","id":"sl/ac28h2","slide":6,"title":"Prepared by Zixuan Liang","textShapes":13}
+{"kind":"textbox","id":"sh/yxobm58z","slide":6,"text":"Prepared by Zixuan Liang","textPreview":"Prepared by Zixuan Liang","textChars":24,"textLines":1,"bbox":[54,32,600,24]}
+{"kind":"textbox","id":"sh/5o7qpg3e","slide":6,"text":"Role of each group member","textPreview":"Role of each group member","textChars":25,"textLines":1,"bbox":[54,68,1000,58]}
+{"kind":"shape","id":"sh/g3ex0nux","slide":6,"bbox":[54,140,1172,1]}
+{"kind":"textbox","id":"sh/r65wjudg","slide":6,"text":"This was completed as an individual project, so Zixuan Liang owned each presentation section and project artifact.","textPreview":"This was completed as an individual project, so Zixuan Liang owned each presentation section and project artifact.","textChars":114,"textLines":1,"bbox":[54,176,1030,36]}
+{"kind":"shape","id":"sh/ylc7u54z","slide":6,"bbox":[54,262,520,122]}
+{"kind":"shape","id":"sh/9cvixcze","slide":6,"bbox":[54,262,6,122]}
+{"kind":"textbox","id":"sh/gr2p8nqx","slide":6,"text":"Project and requirements","textPreview":"Project and requirements","textChars":24,"textLines":1,"bbox":[72,280,484,28]}
+{"kind":"textbox","id":"sh/rytsvu9k","slide":6,"text":"Defined the PantryPilot concept, V1/V1.1 scope, requirements, adverse conditions, and quality goals.","textPreview":"Defined the PantryPilot concept, V1/V1.1 scope, requirements, adverse conditions, and quality goals.","textChars":100,"textLines":1,"bbox":[72,316,484,60]}
+{"kind":"shape","id":"sh/yd0z6103","slide":6,"bbox":[638,262,520,122]}
+{"kind":"shape","id":"sh/wb2hwfyx","slide":6,"bbox":[638,262,6,122]}
+{"kind":"textbox","id":"sh/lwval87e","slide":6,"text":"Risk management","textPreview":"Risk management","textChars":15,"textLines":1,"bbox":[656,280,484,28]}
+{"kind":"textbox","id":"sh/e9cvixcz","slide":6,"text":"Built and updated the risk table, likelihood-impact scores, mitigation strategy, and weekly tracking history.","textPreview":"Built and updated the risk table, likelihood-impact scores, mitigation strategy, and weekly tracking history.","textChars":109,"textLines":1,"bbox":[656,316,484,60]}
+{"kind":"shape","id":"sh/3q5o7qpg","slide":6,"bbox":[54,436,520,122]}
+{"kind":"shape","id":"sh/w3m94fu1","slide":6,"bbox":[54,436,6,122]}
+{"kind":"textbox","id":"sh/loj2t83i","slide":6,"text":"Configuration management","textPreview":"Configuration management","textChars":24,"textLines":1,"bbox":[72,454,484,28]}
+{"kind":"textbox","id":"sh/ex0nuxc3","slide":6,"text":"Created the generic Git repository package, branch model, release tags, changelog, CI workflow, and CM report.","textPreview":"Created the generic Git repository package, branch model, release tags, changelog, CI workflow, and CM report.","textChars":110,"textLines":1,"bbox":[72,490,484,60]}
+{"kind":"shape","id":"sh/3itgfmlk","slide":6,"bbox":[638,436,520,122]}
+{"kind":"shape","id":"sh/szqtcj6t","slide":6,"bbox":[638,436,6,122]}
+{"kind":"textbox","id":"sh/lkjm1cfa","slide":6,"text":"System testing","textPreview":"System testing","textChars":14,"textLines":1,"bbox":[656,454,484,28]}
+{"kind":"textbox","id":"sh/lc7u54zi","slide":6,"text":"Designed six system-level tests, executed the runner, captured results, and documented environment/setup details.","textPreview":"Designed six system-level tests, executed the runner, captured results, and documented environment/setup details.","textChars":113,"textLines":1,"bbox":[656,490,484,60]}
+{"kind":"textbox","id":"sh/wra5gbq1","slide":6,"text":"Prepared by Zixuan Liang","textPreview":"Prepared by Zixuan Liang","textChars":24,"textLines":1,"bbox":[54,672,360,22]}
+{"kind":"textbox","id":"sh/36hcrmhk","slide":6,"text":"CISC 594 - Final Project Presentation - 6/14","textPreview":"CISC 594 - Final Project Presentation - 6/14","textChars":44,"textLines":1,"bbox":[796,672,430,22]}
+{"kind":"notes","id":"nt/ac28h2","slide":6,"text":"This satisfies the group-member role requirement while being transparent that the submission is individual."}
+{"kind":"slide","id":"sl/14okmr","slide":7,"title":"Risk score = likelihood x impact","textShapes":12}
+{"kind":"textbox","id":"sh/6tovahoz","slide":7,"text":"Risk score = likelihood x impact","textPreview":"Risk score = likelihood x impact","textChars":32,"textLines":1,"bbox":[54,32,600,24]}
+{"kind":"textbox","id":"sh/dg7adsji","slide":7,"text":"Risk identification and tracking method","textPreview":"Risk identification and tracking method","textChars":39,"textLines":1,"bbox":[54,68,1000,58]}
+{"kind":"shape","id":"sh/ovahoza1","slide":7,"bbox":[54,140,1172,1]}
+{"kind":"shape","id":"sh/z25kb6xk","slide":7,"bbox":[54,190,336,150]}
+{"kind":"shape","id":"sh/6hcrmhk3","slide":7,"bbox":[54,190,6,150]}
+{"kind":"textbox","id":"sh/d8v6psfi","slide":7,"text":"Identification","textPreview":"Identification","textChars":14,"textLines":1,"bbox":[72,208,300,28]}
+{"kind":"textbox","id":"sh/onyd0z61","slide":7,"text":"Risks were identified from safety-sensitive outputs, external dependencies, optimization complexity, data handling, and release scope.","textPreview":"Risks were identified from safety-sensitive outputs, external dependencies, optimization complexity, data handling, and release scope.","textChars":134,"textLines":1,"bbox":[72,244,300,88]}
+{"kind":"shape","id":"sh/vy90je9c","slide":7,"bbox":[444,190,336,150]}
+{"kind":"shape","id":"sh/6dcbulwv","slide":7,"bbox":[444,190,6,150]}
+{"kind":"textbox","id":"sh/4zidonyd","slide":7,"text":"Scoring","textPreview":"Scoring","textChars":7,"textLines":1,"bbox":[462,208,300,28]}
+{"kind":"textbox","id":"sh/xkf6dcbu","slide":7,"text":"Each risk received a probability score and an impact score from 1 to 5; total priority equals probability times impact.","textPreview":"Each risk received a probability score and an impact score from 1 to 5; total priority equals probability times impact.","textChars":119,"textLines":1,"bbox":[462,244,300,88]}
+{"kind":"shape","id":"sh/mtwra5gb","slide":7,"bbox":[834,190,336,150]}
+{"kind":"shape","id":"sh/fepkzupw","slide":7,"bbox":[834,190,6,150]}
+{"kind":"textbox","id":"sh/4r65wjud","slide":7,"text":"Tracking","textPreview":"Tracking","textChars":8,"textLines":1,"bbox":[852,208,300,28]}
+{"kind":"textbox","id":"sh/xc3ylc7u","slide":7,"text":"Risk status was reviewed weekly and linked to controls, tests, CI checks, release notes, or retirement rationale.","textPreview":"Risk status was reviewed weekly and linked to controls, tests, CI checks, release notes, or retirement rationale.","textChars":113,"textLines":1,"bbox":[852,244,300,88]}
+{"kind":"shape","id":"sh/mlkjm1cf","slide":7,"bbox":[54,404,1060,128]}
+{"kind":"textbox","id":"sh/f6dcbulw","slide":7,"text":"Current risk posture","textPreview":"Current risk posture","textChars":20,"textLines":1,"bbox":[78,432,250,28]}
+{"kind":"textbox","id":"sh/4fu18jqh","slide":7,"text":"R1-R5 remain active and controlled; R6 is monitored; R7 scope expansion was reduced and retired after the V1.1 boundary was clarified.","textPreview":"R1-R5 remain active and controlled; R6 is monitored; R7 scope expansion was reduced and retired after the V1.1 boundary was clarified.","textChars":134,"textLines":1,"bbox":[334,424,740,54]}
+{"kind":"textbox","id":"sh/x0nuxc3y","slide":7,"text":"Prepared by Zixuan Liang","textPreview":"Prepared by Zixuan Liang","textChars":24,"textLines":1,"bbox":[54,672,360,22]}
+{"kind":"textbox","id":"sh/h4byhgn2","slide":7,"text":"CISC 594 - Final Project Presentation - 7/14","textPreview":"CISC 594 - Final Project Presentation - 7/14","textChars":44,"textLines":1,"bbox":[796,672,430,22]}
+{"kind":"notes","id":"nt/14okmr","slide":7,"text":"Explain that risk management is not a one-time list. The report keeps historical weekly records and changes status when a risk is controlled or retired."}
+{"kind":"slide","id":"sl/bp3k1t","slide":8,"title":"Risk identification and tracking","textShapes":6}
+{"kind":"textbox","id":"sh/d8v6psfi","slide":8,"text":"Risk identification and tracking","textPreview":"Risk identification and tracking","textChars":32,"textLines":1,"bbox":[54,32,600,24]}
+{"kind":"textbox","id":"sh/6hcrmhk3","slide":8,"text":"Top project risks by score","textPreview":"Top project risks by score","textChars":26,"textLines":1,"bbox":[54,68,1000,58]}
+{"kind":"shape","id":"sh/z25kb6xk","slide":8,"bbox":[54,140,1172,1]}
+{"kind":"shape","id":"sh/dg7adsji","slide":8,"bbox":[760,190,398,350]}
+{"kind":"textbox","id":"sh/6tovahoz","slide":8,"text":"Priority conclusion","textPreview":"Priority conclusion","textChars":19,"textLines":1,"bbox":[790,220,260,28]}
+{"kind":"textbox","id":"sh/vahoza1g","slide":8,"text":"- Highest risk: unsafe LLM output reaching an allergic user\n- Critical technical risk: optimizer infeasibility or runtime failure\n- High operational risks: unstable external recipe data and pantry date boundaries\n- Privacy risk remains active because profiles contain sensitive preferences","textPreview":"- Highest risk: unsafe LLM output reaching an allergic user | - Critical technical risk: optimizer infeasibility or runtime failure | - H...","textChars":289,"textLines":4,"bbox":[790,272,320,214]}
+{"kind":"textbox","id":"sh/o7qpg3ex","slide":8,"text":"Prepared by Zixuan Liang","textPreview":"Prepared by Zixuan Liang","textChars":24,"textLines":1,"bbox":[54,672,360,22]}
+{"kind":"textbox","id":"sh/dsji5sne","slide":8,"text":"CISC 594 - Final Project Presentation - 8/14","textPreview":"CISC 594 - Final Project Presentation - 8/14","textChars":44,"textLines":1,"bbox":[796,672,430,22]}
+{"kind":"chart","id":"ch/4nap4r65","slide":8,"name":"","chartType":"bar","bbox":[54,188,650,374]}
+{"kind":"notes","id":"nt/bp3k1t","slide":8,"text":"The bar chart supports the risk discussion with the scores from the risk management report."}
+{"kind":"slide","id":"sl/eh0uc3","slide":9,"title":"Risk mitigation and control","textShapes":5}
+{"kind":"textbox","id":"sh/ed8v6psf","slide":9,"text":"Risk mitigation and control","textPreview":"Risk mitigation and control","textChars":27,"textLines":1,"bbox":[54,32,600,24]}
+{"kind":"textbox","id":"sh/p4r65wju","slide":9,"text":"How the main risks were reduced","textPreview":"How the main risks were reduced","textChars":31,"textLines":1,"bbox":[54,68,1000,58]}
+{"kind":"shape","id":"sh/wjudg7ad","slide":9,"bbox":[54,140,1172,1]}
+{"kind":"textbox","id":"sh/i5sneloj","slide":9,"text":"Mitigation rule: a major risk is not considered controlled until it has a design control and testable evidence.","textPreview":"Mitigation rule: a major risk is not considered controlled until it has a design control and testable evidence.","textChars":111,"textLines":1,"bbox":[54,604,1060,30]}
+{"kind":"textbox","id":"sh/pwb2hwfy","slide":9,"text":"Prepared by Zixuan Liang","textPreview":"Prepared by Zixuan Liang","textChars":24,"textLines":1,"bbox":[54,672,360,22]}
+{"kind":"textbox","id":"sh/0bi9s36h","slide":9,"text":"CISC 594 - Final Project Presentation - 9/14","textPreview":"CISC 594 - Final Project Presentation - 9/14","textChars":44,"textLines":1,"bbox":[796,672,430,22]}
+{"kind":"table","id":"tb/i9s36hcr","slide":9,"name":"","rows":6,"cols":3,"preview":"Risk | Reduction control | Verification evidence","bbox":[54,182,1120,390]}
+{"kind":"notes","id":"nt/eh0uc3","slide":9,"text":"This slide connects risk tracking to concrete changes and test evidence."}
+{"kind":"slide","id":"sl/1qdg5l","slide":10,"title":"GitHub-based CM","textShapes":25}
+{"kind":"textbox","id":"sh/ovahoza1","slide":10,"text":"GitHub-based CM","textPreview":"GitHub-based CM","textChars":15,"textLines":1,"bbox":[54,32,600,24]}
+{"kind":"textbox","id":"sh/vahoza1g","slide":10,"text":"Configuration management approach","textPreview":"Configuration management approach","textChars":33,"textLines":1,"bbox":[54,68,1000,58]}
+{"kind":"shape","id":"sh/6tovahoz","slide":10,"bbox":[54,140,1172,1]}
+{"kind":"shape","id":"sh/d8v6psfi","slide":10,"bbox":[54,210,186,214]}
+{"kind":"textbox","id":"sh/onyd0z61","slide":10,"text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[72,228,42,42]}
+{"kind":"textbox","id":"sh/z25kb6xk","slide":10,"text":"Main baseline","textPreview":"Main baseline","textChars":13,"textLines":1,"bbox":[72,292,140,30]}
+{"kind":"textbox","id":"sh/6hcrmhk3","slide":10,"text":"Stable release branch","textPreview":"Stable release branch","textChars":21,"textLines":1,"bbox":[72,340,136,58]}
+{"kind":"textbox","id":"sh/d4vmtwra","slide":10,"text":"->","textPreview":"->","textChars":2,"textLines":1,"bbox":[242,304,32,28]}
+{"kind":"shape","id":"sh/oj2t83it","slide":10,"bbox":[276,210,186,214]}
+{"kind":"textbox","id":"sh/2x4nap4r","slide":10,"text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[294,228,42,42]}
+{"kind":"textbox","id":"sh/vixczed8","slide":10,"text":"Feature branch","textPreview":"Feature branch","textChars":14,"textLines":1,"bbox":[294,292,140,30]}
+{"kind":"textbox","id":"sh/k3q5o7qp","slide":10,"text":"feature/safety-grocery-controls","textPreview":"feature/safety-grocery-controls","textChars":31,"textLines":1,"bbox":[294,340,136,58]}
+{"kind":"textbox","id":"sh/donyd0z6","slide":10,"text":"->","textPreview":"->","textChars":2,"textLines":1,"bbox":[464,304,32,28]}
+{"kind":"shape","id":"sh/6psfil0r","slide":10,"bbox":[498,210,186,214]}
+{"kind":"textbox","id":"sh/val87ed8","slide":10,"text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[516,228,42,42]}
+{"kind":"textbox","id":"sh/kre1w7mp","slide":10,"text":"Pull request","textPreview":"Pull request","textChars":12,"textLines":1,"bbox":[516,292,140,30]}
+{"kind":"textbox","id":"sh/dcbulwva","slide":10,"text":"Scope, tests, and review evidence","textPreview":"Scope, tests, and review evidence","textChars":33,"textLines":1,"bbox":[516,340,136,58]}
+{"kind":"textbox","id":"sh/2lszqtcj","slide":10,"text":"->","textPreview":"->","textChars":2,"textLines":1,"bbox":[686,304,32,28]}
+{"kind":"shape","id":"sh/v6psfil0","slide":10,"bbox":[720,210,186,214]}
+{"kind":"textbox","id":"sh/nuxc3ylc","slide":10,"text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[738,228,42,42]}
+{"kind":"textbox","id":"sh/y90je9cv","slide":10,"text":"CI gate","textPreview":"CI gate","textChars":7,"textLines":1,"bbox":[738,292,140,30]}
+{"kind":"textbox","id":"sh/5wjudg7a","slide":10,"text":"Python 3.12 and pytest workflow","textPreview":"Python 3.12 and pytest workflow","textChars":31,"textLines":1,"bbox":[738,340,136,58]}
+{"kind":"textbox","id":"sh/gbq1oryt","slide":10,"text":"->","textPreview":"->","textChars":2,"textLines":1,"bbox":[908,304,32,28]}
+{"kind":"shape","id":"sh/n29gr2p8","slide":10,"bbox":[942,210,186,214]}
+{"kind":"textbox","id":"sh/yhgn29gr","slide":10,"text":"5","textPreview":"5","textChars":1,"textLines":1,"bbox":[960,228,42,42]}
+{"kind":"textbox","id":"sh/58z25kb6","slide":10,"text":"Release tag","textPreview":"Release tag","textChars":11,"textLines":1,"bbox":[960,292,140,30]}
+{"kind":"textbox","id":"sh/gn29gr2p","slide":10,"text":"v1.0.0 and v1.1.0 baselines","textPreview":"v1.0.0 and v1.1.0 baselines","textChars":27,"textLines":1,"bbox":[960,340,136,58]}
+{"kind":"textbox","id":"sh/neloj2t8","slide":10,"text":"Controlled items","textPreview":"Controlled items","textChars":16,"textLines":1,"bbox":[54,500,210,28]}
+{"kind":"textbox","id":"sh/ytsvu9kn","slide":10,"text":"Source code, tests, configuration files, CI workflow, changelog, release notes, risk table, CM report, and system test report.","textPreview":"Source code, tests, configuration files, CI workflow, changelog, release notes, risk table, CM report, and system test report.","textChars":126,"textLines":1,"bbox":[270,500,880,56]}
+{"kind":"textbox","id":"sh/4zidonyd","slide":10,"text":"Prepared by Zixuan Liang","textPreview":"Prepared by Zixuan Liang","textChars":24,"textLines":1,"bbox":[54,672,360,22]}
+{"kind":"textbox","id":"sh/xkf6dcbu","slide":10,"text":"CISC 594 - Final Project Presentation - 10/14","textPreview":"CISC 594 - Final Project Presentation - 10/14","textChars":45,"textLines":1,"bbox":[796,672,430,22]}
+{"kind":"notes","id":"nt/1qdg5l","slide":10,"text":"Describe CM as a controlled lifecycle, not just a file repository."}
+{"kind":"slide","id":"sl/b7o0s9","slide":11,"title":"Repository and release records","textShapes":4}
+{"kind":"textbox","id":"sh/at47y1kr","slide":11,"text":"Repository and release records","textPreview":"Repository and release records","textChars":30,"textLines":1,"bbox":[54,32,600,24]}
+{"kind":"textbox","id":"sh/lkjm1cfa","slide":11,"text":"Configuration management evidence","textPreview":"Configuration management evidence","textChars":33,"textLines":1,"bbox":[54,68,1000,58]}
+{"kind":"shape","id":"sh/szqtcj6t","slide":11,"bbox":[54,140,1172,1]}
+{"kind":"textbox","id":"sh/ahoza1gv","slide":11,"text":"Prepared by Zixuan Liang","textPreview":"Prepared by Zixuan Liang","textChars":24,"textLines":1,"bbox":[54,672,360,22]}
+{"kind":"textbox","id":"sh/l87ed8ba","slide":11,"text":"CISC 594 - Final Project Presentation - 11/14","textPreview":"CISC 594 - Final Project Presentation - 11/14","textChars":45,"textLines":1,"bbox":[796,672,430,22]}
+{"kind":"table","id":"tb/uxc3ylc7","slide":11,"name":"","rows":7,"cols":2,"preview":"Evidence | Project record","bbox":[54,178,1120,396]}
+{"kind":"notes","id":"nt/b7o0s9","slide":11,"text":"This slide gives the concrete evidence expected by the CM assignment."}
+{"kind":"slide","id":"sl/oujrz3","slide":12,"title":"Methodology and environment","textShapes":10}
+{"kind":"textbox","id":"sh/fa9w3m94","slide":12,"text":"Methodology and environment","textPreview":"Methodology and environment","textChars":27,"textLines":1,"bbox":[54,32,600,24]}
+{"kind":"textbox","id":"sh/8v6psfil","slide":12,"text":"System testing approach","textPreview":"System testing approach","textChars":23,"textLines":1,"bbox":[54,68,1000,58]}
+{"kind":"shape","id":"sh/xczed8v6","slide":12,"bbox":[54,140,1172,1]}
+{"kind":"shape","id":"sh/qd4vmtwr","slide":12,"bbox":[54,180,346,154]}
+{"kind":"shape","id":"sh/fyxobm58","slide":12,"bbox":[54,180,6,154]}
+{"kind":"textbox","id":"sh/8jqh0fep","slide":12,"text":"Methodology","textPreview":"Methodology","textChars":11,"textLines":1,"bbox":[72,198,310,28]}
+{"kind":"textbox","id":"sh/x4nap4r6","slide":12,"text":"Manual/system-level scenarios exercise release identity, quality gates, grocery aggregation, safety controls, and pantry date boundaries.","textPreview":"Manual/system-level scenarios exercise release identity, quality gates, grocery aggregation, safety controls, and pantry date boundaries.","textChars":137,"textLines":1,"bbox":[72,234,310,92]}
+{"kind":"shape","id":"sh/q1orytsv","slide":12,"bbox":[444,180,346,154]}
+{"kind":"shape","id":"sh/fmlkjm1c","slide":12,"bbox":[444,180,6,154]}
+{"kind":"textbox","id":"sh/jqh0fepk","slide":12,"text":"Environment","textPreview":"Environment","textChars":11,"textLines":1,"bbox":[462,198,310,28]}
+{"kind":"textbox","id":"sh/q5o7qpg3","slide":12,"text":"macOS 26.5.1 arm64, local Python 3.11.15, CI Python 3.12, pytest 8.2.2 in requirements.","textPreview":"macOS 26.5.1 arm64, local Python 3.11.15, CI Python 3.12, pytest 8.2.2 in requirements.","textChars":87,"textLines":1,"bbox":[462,234,310,92]}
+{"kind":"shape","id":"sh/1w7mp0bi","slide":12,"bbox":[834,180,346,154]}
+{"kind":"shape","id":"sh/8bat47y1","slide":12,"bbox":[834,180,6,154]}
+{"kind":"textbox","id":"sh/j2t83itg","slide":12,"text":"Setup","textPreview":"Setup","textChars":5,"textLines":1,"bbox":[852,198,310,28]}
+{"kind":"textbox","id":"sh/qh0fepkz","slide":12,"text":"Clone/source package, install requirements, run pytest in CI, and run python3 system_test_runner.py for system scenarios.","textPreview":"Clone/source package, install requirements, run pytest in CI, and run python3 system_test_runner.py for system scenarios.","textChars":121,"textLines":1,"bbox":[852,234,310,92]}
+{"kind":"textbox","id":"sh/8nqxs72x","slide":12,"text":"Prepared by Zixuan Liang","textPreview":"Prepared by Zixuan Liang","textChars":24,"textLines":1,"bbox":[54,672,360,22]}
+{"kind":"textbox","id":"sh/j6tovaho","slide":12,"text":"CISC 594 - Final Project Presentation - 12/14","textPreview":"CISC 594 - Final Project Presentation - 12/14","textChars":45,"textLines":1,"bbox":[796,672,430,22]}
+{"kind":"table","id":"tb/ex0nuxc3","slide":12,"name":"","rows":5,"cols":2,"preview":"Test class | Coverage target","bbox":[54,386,1120,178]}
+{"kind":"notes","id":"nt/oujrz3","slide":12,"text":"Explain that the system tests were chosen around release-level behavior and the most important risks from the risk report."}
+{"kind":"slide","id":"sl/imup99","slide":13,"title":"Actual results","textShapes":7}
+{"kind":"textbox","id":"sh/lwval87e","slide":13,"text":"Actual results","textPreview":"Actual results","textChars":14,"textLines":1,"bbox":[54,32,600,24]}
+{"kind":"textbox","id":"sh/e9cvixcz","slide":13,"text":"System testing outcome","textPreview":"System testing outcome","textChars":22,"textLines":1,"bbox":[54,68,1000,58]}
+{"kind":"shape","id":"sh/3q5o7qpg","slide":13,"bbox":[54,140,1172,1]}
+{"kind":"textbox","id":"sh/w3m94fu1","slide":13,"text":"6 / 6","textPreview":"6 / 6","textChars":5,"textLines":1,"bbox":[54,182,220,80]}
+{"kind":"textbox","id":"sh/loj2t83i","slide":13,"text":"system scenarios passed","textPreview":"system scenarios passed","textChars":23,"textLines":1,"bbox":[284,204,420,42]}
+{"kind":"textbox","id":"sh/ex0nuxc3","slide":13,"text":"No defects were observed during the final local system-test execution.","textPreview":"No defects were observed during the final local system-test execution.","textChars":70,"textLines":1,"bbox":[284,252,620,30]}
+{"kind":"textbox","id":"sh/szqtcj6t","slide":13,"text":"Prepared by Zixuan Liang","textPreview":"Prepared by Zixuan Liang","textChars":24,"textLines":1,"bbox":[54,672,360,22]}
+{"kind":"textbox","id":"sh/lkjm1cfa","slide":13,"text":"CISC 594 - Final Project Presentation - 13/14","textPreview":"CISC 594 - Final Project Presentation - 13/14","textChars":45,"textLines":1,"bbox":[796,672,430,22]}
+{"kind":"table","id":"tb/2x4nap4r","slide":13,"name":"","rows":7,"cols":2,"preview":"Scenario | Actual result","bbox":[54,318,1120,266]}
+{"kind":"notes","id":"nt/imup99","slide":13,"text":"Use this slide as the proof point for the final system-testing requirement."}
+{"kind":"slide","id":"sl/3cjhh4","slide":14,"title":"Closing","textShapes":9}
+{"kind":"textbox","id":"sh/ylc7u54z","slide":14,"text":"Closing","textPreview":"Closing","textChars":7,"textLines":1,"bbox":[54,32,600,24]}
+{"kind":"textbox","id":"sh/9cvixcze","slide":14,"text":"Final takeaway and references","textPreview":"Final takeaway and references","textChars":29,"textLines":1,"bbox":[54,68,1000,58]}
+{"kind":"shape","id":"sh/gr2p8nqx","slide":14,"bbox":[54,140,1172,1]}
+{"kind":"textbox","id":"sh/nih4byhg","slide":14,"text":"PantryPilot's quality story is not just adding intelligence to recipes.","textPreview":"PantryPilot's quality story is not just adding intelligence to recipes.","textChars":71,"textLines":1,"bbox":[54,188,1040,44]}
+{"kind":"textbox","id":"sh/yxobm58z","slide":14,"text":"It is a controlled system where risky outputs are bounded by deterministic checks, versioned baselines, risk tracking, and system-level test evidence.","textPreview":"It is a controlled system where risky outputs are bounded by deterministic checks, versioned baselines, risk tracking, and system-level t...","textChars":150,"textLines":1,"bbox":[54,254,1040,84]}
+{"kind":"shape","id":"sh/5o7qpg3e","slide":14,"bbox":[54,424,1080,118]}
+{"kind":"textbox","id":"sh/g3ex0nux","slide":14,"text":"Project sources","textPreview":"Project sources","textChars":15,"textLines":1,"bbox":[78,446,210,28]}
+{"kind":"textbox","id":"sh/rmhk3q5o","slide":14,"text":"- PantryPilot Risk Management Report\n- PantryPilot Final Configuration Management Report\n- PantryPilot System Testing Report\n- PantryPilot CM Generic Files source package","textPreview":"- PantryPilot Risk Management Report | - PantryPilot Final Configuration Management Report | - PantryPilot System Testing Report | - Pant...","textChars":170,"textLines":4,"bbox":[304,438,760,82]}
+{"kind":"textbox","id":"sh/y1kre1w7","slide":14,"text":"Questions","textPreview":"Questions","textChars":9,"textLines":1,"bbox":[54,594,320,46]}
+{"kind":"textbox","id":"sh/kjm1cfa9","slide":14,"text":"Prepared by Zixuan Liang","textPreview":"Prepared by Zixuan Liang","textChars":24,"textLines":1,"bbox":[54,672,360,22]}
+{"kind":"textbox","id":"sh/94fu18jq","slide":14,"text":"CISC 594 - Final Project Presentation - 14/14","textPreview":"CISC 594 - Final Project Presentation - 14/14","textChars":45,"textLines":1,"bbox":[796,672,430,22]}
+{"kind":"notes","id":"nt/3cjhh4","slide":14,"text":"Close by tying the semester project back to the CISC 594 course themes: risk, configuration control, and testing."}
