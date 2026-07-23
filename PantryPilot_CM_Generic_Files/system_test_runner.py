@@ -20,6 +20,7 @@ def run_system_tests() -> list[dict]:
             "description": "Load the release configuration and display release identity.",
             "expected": "PantryPilot 1.1.0: Safety & Grocery Controls",
             "actual": describe_release(config),
+            "expected_value": "PantryPilot 1.1.0: Safety & Grocery Controls",
         },
         {
             "id": "V1-ST-02",
@@ -28,6 +29,7 @@ def run_system_tests() -> list[dict]:
             "actual": ", ".join(
                 gate for gate, enabled in sorted(config["quality_gates"].items()) if enabled
             ),
+            "expected_value": "ci_required, pull_request_required, review_required, unit_tests_required",
         },
         {
             "id": "V1-ST-03",
@@ -39,6 +41,7 @@ def run_system_tests() -> list[dict]:
                     {"ingredients": [{"name": "rice", "quantity": 2, "unit": "cup"}]},
                 ]
             ),
+            "expected_value": [{"name": "rice", "quantity": 3.0, "unit": "cup"}],
         },
         {
             "id": "V1.1-ST-01",
@@ -53,6 +56,7 @@ def run_system_tests() -> list[dict]:
                     {"allergens": ["soy"]},
                 ),
             },
+            "expected_value": {"conflicts": ["soy"], "safe": False},
         },
         {
             "id": "V1.1-ST-02",
@@ -62,6 +66,7 @@ def run_system_tests() -> list[dict]:
                 {"ingredients": ["rice", "broccoli", "olive oil"]},
                 {"allergens": ["soy", "peanut"]},
             ),
+            "expected_value": True,
         },
         {
             "id": "V1.1-ST-03",
@@ -73,11 +78,17 @@ def run_system_tests() -> list[dict]:
                 "plus_4": is_near_expiry("2026-08-18", "2026-08-14"),
                 "yesterday": is_near_expiry("2026-08-13", "2026-08-14"),
             },
+            "expected_value": {
+                "today": True,
+                "plus_3": True,
+                "plus_4": False,
+                "yesterday": False,
+            },
         },
     ]
 
     for test in tests:
-        test["result"] = "PASS"
+        test["result"] = "PASS" if test["actual"] == test.pop("expected_value") else "FAIL"
     return tests
 
 

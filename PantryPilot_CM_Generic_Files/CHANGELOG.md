@@ -2,6 +2,22 @@
 
 All notable PantryPilot configuration-management changes are recorded here.
 
+## [Unreleased]
+
+### Added
+
+- Flask demonstration UI for weekly planning, grocery aggregation, pantry
+  expiry status, and release-quality evidence.
+- Interactive allergen profile controls backed by the deterministic recipe
+  safety gate.
+- API-level regression tests for the web presentation layer.
+- Project-local recipe photography and Lucide icon runtime for an offline demo.
+
+### Changed
+
+- System-test results are now calculated from expected and actual values rather
+  than assigned a fixed display status.
+
 ## [1.1.0] - 2026-08-04
 
 ### Added

@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#17382f">
+    <title>PantryPilot | Safety-aware meal planning</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+  </head>
+  <body>
+    <div class="loading-screen" id="loading-screen" role="status" aria-live="polite">
+      <div class="loading-mark"><i data-lucide="cooking-pot"></i></div>
+      <span>Loading PantryPilot</span>
+    </div>
+
+    <div class="app-shell" id="app-shell" aria-hidden="true">
+      <aside class="sidebar">
+        <div class="brand">
+          <span class="brand-mark"><i data-lucide="cooking-pot"></i></span>
+          <span class="brand-copy">
+            <strong>PantryPilot</strong>
+            <small>Plan safely. Waste less.</small>
+          </span>
+        </div>
+
+        <nav class="primary-nav" aria-label="Main navigation">
+          <button class="nav-item active" type="button" data-view="plan" aria-current="page">
+            <i data-lucide="calendar-days"></i><span>Plan</span>
+          </button>
+          <button class="nav-item" type="button" data-view="grocery">
+            <i data-lucide="shopping-basket"></i><span>Grocery</span>
+          </button>
+          <button class="nav-item" type="button" data-view="pantry">
+            <i data-lucide="package-open"></i><span>Pantry</span>
+          </button>
+          <button class="nav-item" type="button" data-view="quality">
+            <i data-lucide="shield-check"></i><span>Quality</span>
+          </button>
+        </nav>
+
+        <div class="release-panel">
+          <div class="release-panel-icon"><i data-lucide="git-branch"></i></div>
+          <div>
+            <span>Controlled baseline</span>
+            <strong id="sidebar-release">v1.1.0</strong>
+          </div>
+          <span class="release-dot" title="Baseline loaded"></span>
+        </div>
+      </aside>
+
+      <main class="main-content">
+        <header class="topbar">
+          <div>
+            <p class="page-kicker" id="page-kicker">Week of August 10</p>
+            <h1 id="page-title">Weekly plan</h1>
+            <p class="page-summary" id="page-summary">Three dinners reviewed against your household profile.</p>
+          </div>
+          <div class="topbar-actions">
+            <button class="icon-button" type="button" id="reset-demo" title="Reset demo" aria-label="Reset demo">
+              <i data-lucide="rotate-ccw"></i>
+            </button>
+            <div class="profile-summary" title="Active household profile">
+              <span class="avatar">ZL</span>
+              <span><strong>Zixuan</strong><small>Household profile</small></span>
+            </div>
+          </div>
+        </header>
+
+        <section class="view active" id="view-plan" data-view-panel="plan">
+          <div class="metrics-band" aria-label="Weekly summary">
+            <div class="metric">
+              <span class="metric-icon green"><i data-lucide="utensils"></i></span>
+              <span><strong id="metric-meals">3</strong><small>Planned dinners</small></span>
+            </div>
+            <div class="metric">
+              <span class="metric-icon red"><i data-lucide="shield-alert"></i></span>
+              <span><strong id="metric-blocked">1</strong><small>Safety conflict</small></span>
+            </div>
+            <div class="metric">
+              <span class="metric-icon yellow"><i data-lucide="clock-3"></i></span>
+              <span><strong>25 min</strong><small>Average prep</small></span>
+            </div>
+            <div class="metric">
+              <span class="metric-icon blue"><i data-lucide="list-checks"></i></span>
+              <span><strong id="metric-grocery">0</strong><small>Grocery items</small></span>
+            </div>
+          </div>
+
+          <div class="plan-layout">
+            <section class="content-section" aria-labelledby="meal-plan-title">
+              <div class="section-heading">
+                <div>
+                  <p class="section-kicker">Dinner schedule</p>
+                  <h2 id="meal-plan-title">This week's meals</h2>
+                </div>
+                <span class="section-count" id="recipe-count">3 recipes</span>
+              </div>
+              <div class="recipe-list" id="recipe-list"></div>
+            </section>
+
+            <aside class="safety-tool" aria-labelledby="safety-title">
+              <div class="tool-heading">
+                <span class="tool-icon"><i data-lucide="shield-check"></i></span>
+                <div>
+                  <p class="section-kicker">Deterministic control</p>
+                  <h2 id="safety-title">Safety gate</h2>
+                </div>
+              </div>
+
+              <fieldset class="allergen-controls">
+                <legend>Household allergens</legend>
+                <div class="allergen-options" id="allergen-options">
+                  <label><input type="checkbox" value="soy" checked><span>Soy</span></label>
+                  <label><input type="checkbox" value="peanut"><span>Peanut</span></label>
+                  <label><input type="checkbox" value="milk"><span>Milk</span></label>
+                  <label><input type="checkbox" value="egg"><span>Egg</span></label>
+                </div>
+              </fieldset>
+
+              <div class="selected-recipe" id="selected-recipe-summary"></div>
+              <div class="safety-result checking" id="safety-result" aria-live="polite">
+                <span class="result-icon"><i data-lucide="loader-circle"></i></span>
+                <div><strong>Checking recipe</strong><p>Evaluating normalized ingredient aliases.</p></div>
+              </div>
+
+              <div class="control-note">
+                <i data-lucide="workflow"></i>
+                <p><strong>Decision path</strong><span>Candidate recipe → alias normalization → profile comparison → approve or block</span></p>
+              </div>
+            </aside>
+          </div>
+        </section>
+
+        <section class="view" id="view-grocery" data-view-panel="grocery" hidden>
+          <div class="view-toolbar">
+            <div class="recipe-filter" id="grocery-recipe-filter" aria-label="Recipes included in grocery list"></div>
+            <button class="primary-button" type="button" id="generate-grocery">
+              <i data-lucide="sparkles"></i><span>Generate list</span>
+            </button>
+          </div>
+
+          <div class="grocery-layout">
+            <section class="content-section" aria-labelledby="grocery-title">
+              <div class="section-heading">
+                <div>
+                  <p class="section-kicker">Consolidated output</p>
+                  <h2 id="grocery-title">Weekly grocery list</h2>
+                </div>
+                <span class="section-count" id="grocery-count">Ready</span>
+              </div>
+              <div class="table-shell">
+                <table>
+                  <thead><tr><th>Ingredient</th><th>Quantity</th><th>Category</th><th>Status</th></tr></thead>
+                  <tbody id="grocery-table-body"></tbody>
+                </table>
+              </div>
+            </section>
+
+            <aside class="summary-tool">
+              <p class="section-kicker">Aggregation result</p>
+              <h2>One list, no duplicates</h2>
+              <div class="summary-stat"><strong id="grocery-recipe-total">3</strong><span>recipes combined</span></div>
+              <div class="summary-stat"><strong id="grocery-item-total">0</strong><span>canonical items</span></div>
+              <div class="aggregation-example">
+                <span>olive oil</span>
+                <code>1 + 1 + 1 tbsp</code>
+                <strong>3 tbsp</strong>
+              </div>
+              <p class="tool-footnote">Names and units are normalized before quantities are added.</p>
+            </aside>
+          </div>
+        </section>
+
+        <section class="view" id="view-pantry" data-view-panel="pantry" hidden>
+          <div class="view-toolbar pantry-toolbar">
+            <div class="demo-date"><i data-lucide="calendar-clock"></i><span>Demo date</span><strong>Aug 14, 2026</strong></div>
+            <div class="window-control" aria-label="Near-expiry window">
+              <span>Use-soon window</span>
+              <div class="segmented-control" id="window-control">
+                <button type="button" data-window="1">1 day</button>
+                <button class="active" type="button" data-window="3">3 days</button>
+                <button type="button" data-window="5">5 days</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="pantry-layout">
+            <section class="content-section" aria-labelledby="pantry-title">
+              <div class="section-heading">
+                <div>
+                  <p class="section-kicker">Inventory status</p>
+                  <h2 id="pantry-title">Pantry and refrigerator</h2>
+                </div>
+                <span class="section-count" id="pantry-count">5 items</span>
+              </div>
+              <div class="pantry-list" id="pantry-list"></div>
+            </section>
+
+            <aside class="summary-tool pantry-summary">
+              <p class="section-kicker">Priority queue</p>
+              <h2>Use these first</h2>
+              <div class="expiry-score"><strong id="use-soon-count">2</strong><span>items inside the selected window</span></div>
+              <div class="expiry-score expired"><strong id="expired-count">1</strong><span>expired item excluded from planning</span></div>
+              <div class="boundary-note"><i data-lucide="brackets"></i><p>The window is inclusive: day 0 through day <span id="window-value">3</span>.</p></div>
+            </aside>
+          </div>
+        </section>
+
+        <section class="view" id="view-quality" data-view-panel="quality" hidden>
+          <div class="quality-intro">
+            <div>
+              <p class="section-kicker">Release evidence</p>
+              <h2 id="quality-release">PantryPilot 1.1.0</h2>
+              <p>Safety & Grocery Controls</p>
+            </div>
+            <button class="primary-button" type="button" id="run-quality-checks">
+              <i data-lucide="play"></i><span>Run release checks</span>
+            </button>
+          </div>
+
+          <div class="gate-strip" id="quality-gates"></div>
+
+          <div class="quality-layout">
+            <section class="content-section" aria-labelledby="scenario-title">
+              <div class="section-heading">
+                <div>
+                  <p class="section-kicker">System-level scenarios</p>
+                  <h2 id="scenario-title">Release verification</h2>
+                </div>
+                <span class="section-count neutral" id="quality-status">Ready to run</span>
+              </div>
+              <div class="scenario-list" id="scenario-list">
+                <div class="quality-empty"><i data-lucide="flask-conical"></i><p>Run the checks to evaluate the controlled baseline.</p></div>
+              </div>
+            </section>
+
+            <aside class="quality-score" id="quality-score">
+              <span class="score-ring"><strong>—</strong><small>/ 6</small></span>
+              <h2>Release checks</h2>
+              <p>Waiting for execution</p>
+            </aside>
+          </div>
+        </section>
+
+        <div class="toast" id="toast" role="status" aria-live="polite"></div>
+      </main>
+    </div>
+
+    <script src="{{ url_for('static', filename='vendor/lucide.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+  </body>
+</html>

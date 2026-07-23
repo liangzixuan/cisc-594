@@ -46,6 +46,8 @@ The current executable baseline demonstrates:
 - Pantry-expiry boundary logic using an inclusive near-expiry window.
 - Automated regression tests with `pytest`.
 - A manual system-test runner for release-level evidence.
+- A local web interface for demonstrating safety, grocery, pantry, and quality
+  workflows without external services.
 
 The broader product concept also includes:
 
@@ -65,6 +67,15 @@ PantryPilot_CM_Generic_Files/
   CHANGELOG.md
   requirements.txt
   system_test_runner.py
+  templates/
+    index.html
+  static/
+    app.js
+    styles.css
+    assets/
+  src/
+    pantrypilot_app.py
+    web_app.py
   config/
     app_config.json
     environment.example
@@ -75,10 +86,9 @@ PantryPilot_CM_Generic_Files/
   releases/
     release_notes_v1.0.0.md
     release_notes_v1.1.0.md
-  src/
-    pantrypilot_app.py
   tests/
     test_smoke.py
+    test_web_app.py
 ```
 
 Repository-level GitHub configuration is stored at
@@ -91,6 +101,10 @@ repository root.
 | File | Purpose |
 |---|---|
 | `src/pantrypilot_app.py` | Generic PantryPilot application functions used by tests and system scenarios. |
+| `src/web_app.py` | Flask application and deterministic API endpoints used by the demonstration UI. |
+| `templates/index.html` | Single-screen PantryPilot demo with Plan, Grocery, Pantry, and Quality views. |
+| `static/app.js` | Browser interactions and API integration for the demo. |
+| `static/styles.css` | Responsive presentation styling for desktop and mobile. |
 | `config/app_config.json` | Version-controlled application baseline, feature flags, and quality-gate settings. |
 | `tests/test_smoke.py` | Automated smoke/regression tests for release identity, gates, allergen filtering, grocery aggregation, and expiry logic. |
 | `system_test_runner.py` | Manual system-level test runner used as evidence in the system testing report. |
@@ -103,10 +117,10 @@ repository root.
 - Python 3.11 or later for local execution.
 - Python 3.12 in GitHub Actions CI.
 - `pip`.
+- Flask for the local web demonstration.
 - `pytest` for automated tests.
 
-The only declared Python dependency for this generic project is listed in
-`requirements.txt`.
+Declared Python dependencies are pinned in `requirements.txt`.
 
 ## Setup
 
@@ -139,6 +153,29 @@ Expected output:
 ```text
 PantryPilot 1.1.0: Safety & Grocery Controls
 ```
+
+## Run the Web Demo
+
+From the PantryPilot project directory:
+
+```bash
+python -m src.web_app
+```
+
+Open `http://127.0.0.1:5000` in a browser. The demo begins with a soy allergy
+enabled and the ginger tofu recipe selected, making the safety gate's blocking
+decision immediately visible.
+
+Suggested live-demo sequence:
+
+1. In **Plan**, show that soy sauce blocks the tofu bowl, then clear the Soy
+   checkbox to show the same recipe pass the deterministic safety gate.
+2. In **Grocery**, generate the combined list and point out that three separate
+   olive-oil entries become one `3 tbsp` item.
+3. In **Pantry**, change the use-soon window from three to five days and show
+   how the boundary classification changes.
+4. In **Quality**, run the release checks and show all six system scenarios
+   passing against the controlled `1.1.0` baseline.
 
 ## Run Automated Tests
 

@@ -7,7 +7,7 @@ from docx.oxml.ns import qn
 from docx.shared import Inches, Pt, RGBColor
 
 
-OUT = "PantryPilot_Risk_Management_Report_Zixuan_Liang.docx"
+OUT = "PantryPilot_Risk_Management_Report_Zixuan_Liang_Updated.docx"
 
 
 COLORS = {
@@ -120,6 +120,20 @@ RISKS = [
         "evidence": "Project proposal V1/V2 boundary, CM baseline v1.0.0, release notes, branching strategy.",
         "trigger": "V2 feature merged before V1 baseline or required V1 acceptance test deferred by expansion work.",
     },
+    {
+        "id": "R8",
+        "category": "Integration / presentation",
+        "title": "UI/backend decision mismatch or demo failure",
+        "risk": "The web interface displays a safety, grocery, pantry, or quality result that differs from the deterministic backend, or the local demonstration cannot run reliably during review.",
+        "probability": 2,
+        "impact": 4,
+        "status": "Monitor",
+        "priority": "Medium",
+        "rationale": "A presentation-layer mismatch could hide a safety control or undermine the project's test evidence even when the backend logic is correct.",
+        "mitigation": "Keep the Flask API as the source of truth; test each endpoint; package assets locally; perform desktop/mobile checks; rehearse a resettable demo.",
+        "evidence": "tests/test_web_app.py, /api/quality-summary, 11 passing pytest tests, responsive browser review.",
+        "trigger": "Any UI/API disagreement, failed demo route, missing local asset, nonpassing web regression, or inability to reproduce the demo locally.",
+    },
 ]
 
 
@@ -162,16 +176,16 @@ WEEKS = [
     {
         "week": "Week 6",
         "date": "Jul. 21",
-        "focus": "System testing plan",
-        "updates": "Mapped risks to tests: allergen regression, optimizer feasibility/property tests, API parser fixtures, pantry-date boundary tests, and grocery aggregation tests.",
-        "score_changes": "R1, R2, R3, and R4 stayed active because implementation defects would still affect release readiness.",
+        "focus": "System testing and web demonstration",
+        "updates": "Mapped risks to system tests and added a Flask presentation layer that delegates decisions to the deterministic backend. Added endpoint and responsive-browser checks.",
+        "score_changes": "R1-R4 stayed active. Opened R8=8 to track UI/backend consistency and local demo availability.",
     },
     {
         "week": "Week 7",
         "date": "Jul. 28",
         "focus": "Risk report baseline",
-        "updates": "Reviewed the risk register for final reporting. No new top risk was added; R7 remained retired/controlled, while safety, optimizer, API, pantry-date, and privacy risks stayed active.",
-        "score_changes": "Current tracked scores: R1=25, R2=20, R3=16, R4=15, R5=12, R6=9, R7=8.",
+        "updates": "Reviewed the final register after the demo implementation. R8 remained medium because the UI is locally packaged, delegates to backend controls, and has five passing API regression tests. R7 remained retired/controlled.",
+        "score_changes": "Current scores: R1=25, R2=20, R3=16, R4=15, R5=12, R6=9, R7=8, R8=8.",
     },
 ]
 
@@ -184,6 +198,7 @@ TREND = {
     "R5": ["-", "-", 12, 12, 12, 12, 12],
     "R6": [12, 9, 9, 9, 9, 9, 9],
     "R7": [16, 16, 16, 12, 8, 8, 8],
+    "R8": ["-", "-", "-", "-", "-", 8, 8],
 }
 
 
@@ -256,6 +271,9 @@ def apply_table_style(table, widths=None, font_size=9):
     if widths:
         set_column_widths(table, widths)
     for r_idx, row in enumerate(table.rows):
+        tr_pr = row._tr.get_or_add_trPr()
+        if tr_pr.find(qn("w:cantSplit")) is None:
+            tr_pr.append(OxmlElement("w:cantSplit"))
         for cell in row.cells:
             cell.vertical_alignment = WD_ALIGN_VERTICAL.CENTER
             set_cell_margins(cell)
@@ -398,7 +416,7 @@ def build_report():
     )
     add_para(
         doc,
-        "The highest current risk is unsafe AI output because the system uses an LLM to propose substitutions and, in Version 2, generate recipes. The highest-priority control is therefore not another prompt; it is a deterministic safety layer that treats LLM output as untrusted and blocks allergen-containing suggestions before a user can see them. Other major risks are optimizer infeasibility, recipe API variability, pantry-expiry boundary defects, privacy exposure, grocery-list aggregation defects, and scope creep from V2 features.",
+        "The highest current risk is unsafe AI output because the system uses an LLM to propose substitutions and, in Version 2, generate recipes. The highest-priority control is therefore not another prompt; it is a deterministic safety layer that treats LLM output as untrusted and blocks allergen-containing suggestions before a user can see them. Other tracked risks include optimizer infeasibility, recipe API variability, pantry-expiry boundary defects, privacy exposure, grocery-list aggregation defects, V2 scope expansion, and mismatch or availability failures in the new web demonstration layer.",
     )
 
     add_section_title(doc, "Risk Scoring Method")
@@ -427,7 +445,7 @@ def build_report():
     add_section_title(doc, "Current Risk Identification and Assessment")
     add_para(
         doc,
-        "The current register contains seven risks. Six remain active or monitored, while the scope/schedule risk is marked as controlled because the project adopted a V1/V2 release boundary and a CM baseline. R1 through R5 are the most important risks because they could affect user safety, system correctness, test stability, or privacy.",
+        "The current register contains eight risks. Seven remain active or monitored, while the scope/schedule risk is marked as controlled because the project adopted a V1/V2 release boundary and a CM baseline. R1 through R5 are the most important risks because they could affect user safety, system correctness, test stability, or privacy. R8 records the new integration risk introduced by the web presentation layer.",
     )
     add_table_caption(doc, "Table 2")
     add_para(doc, "Current PantryPilot risk register", italic=True)
@@ -474,7 +492,10 @@ def build_report():
         values = [risk["id"], risk["mitigation"], risk["evidence"], f"Zixuan Liang; {risk['status']}"]
         for i, value in enumerate(values):
             set_cell_text(cells[i], value)
-    apply_table_style(table, [0.52, 2.85, 2.05, 1.02], font_size=8.5)
+    apply_table_style(table, [0.52, 2.85, 2.05, 1.02], font_size=7.8)
+    for row in table.rows:
+        for cell in row.cells:
+            set_cell_margins(cell, top=45, start=80, bottom=45, end=80)
 
     doc.add_page_break()
     add_section_title(doc, "Week-by-Week Risk Tracking")
@@ -512,17 +533,17 @@ def build_report():
     add_section_title(doc, "Risk Retirement and Continuing Monitoring")
     add_para(
         doc,
-        "R7 is the only retired or controlled risk in the current register. It was reduced because the project separated V1 from V2, created a configuration-management baseline, and defined release criteria before higher-risk V2 work begins. R6 is monitored because unit conversion and aggregation defects remain possible, but the mitigation is straightforward and the impact is lower than safety or privacy risks.",
+        "R7 is the only retired or controlled risk in the current register. It was reduced because the project separated V1 from V2, created a configuration-management baseline, and defined release criteria before higher-risk V2 work begins. R6 is monitored because unit conversion and aggregation defects remain possible. R8 is also monitored: the Flask API remains the source of truth, all assets are local, and five web regression tests plus responsive browser checks reduce the probability of a presentation-only inconsistency.",
     )
     add_para(
         doc,
-        "R1, R2, R3, R4, and R5 remain active. These risks should be reviewed before any implementation baseline because they connect directly to safety filtering, optimizer behavior, external dependency stability, expiry-date boundaries, and sensitive user data. The project should not tag a release unless the relevant controls have current test or audit evidence.",
+        "R1, R2, R3, R4, and R5 remain active. These risks should be reviewed before any implementation baseline because they connect directly to safety filtering, optimizer behavior, external dependency stability, expiry-date boundaries, and sensitive user data. R6 and R8 remain under monitoring. The project should not tag a release unless the relevant controls have current test, browser, or audit evidence.",
     )
 
     add_section_title(doc, "Conclusion")
     add_para(
         doc,
-        "The most important lesson from the PantryPilot risk analysis is that the system's smart behavior must be bounded by disciplined SQA controls. LLM-generated recipes and substitutions can add value, but the safety case depends on deterministic filtering, traceable requirements, CM baselines, and repeatable system tests. The weekly record shows that risks were not treated as a one-time list; they were opened, rescored, mitigated, monitored, and retired as the project scope became clearer.",
+        "The most important lesson from the PantryPilot risk analysis is that the system's smart behavior and its user interface must be bounded by disciplined SQA controls. LLM-generated recipes and substitutions can add value, but the safety case depends on deterministic filtering, traceable requirements, CM baselines, repeatable system tests, and a presentation layer that cannot bypass backend decisions. The weekly record shows that risks were opened, rescored, mitigated, monitored, and retired as the project scope became clearer.",
     )
 
     add_section_title(doc, "References")
