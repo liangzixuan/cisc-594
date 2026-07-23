@@ -10,9 +10,9 @@
 | Semester | Summer 2026 |
 | Repository URL | https://github.com/liangzixuan/cisc-594 |
 | Current Branch | `main` |
-| Repository Baseline Inspected | `51e7a65a58327b4cdcb6e7d0a0f3616c28c2bc7a` plus the Unreleased web demonstration changes present in the working tree |
+| Current Commit SHA | `c08567f762e7bbe91a885a962cd1c85d6929c0bc` (application baseline at final review; the later document-only commit is identified in GitHub history and submission metadata) |
 | Current Release Version | Backend baseline `1.1.0`; Flask web demonstration is Unreleased |
-| Document Version | 1.1 |
+| Document Version | 1.2 |
 | Last Updated | July 23, 2026 |
 | Document Basis | Executable code, tests, configuration, change records, release records, and prior project documents |
 
@@ -23,7 +23,8 @@ The immutable Git commit containing this update is identified in the GitHub hist
 | Version | Date | Git Commit | Description | Author |
 |---|---|---|---|---|
 | 1.0 | July 21, 2026 | Working-tree artifact | Created the initial as-built PRD as `PantryPilot_Product_Requirements_Document_Zixuan_Liang.md`. | Zixuan Liang |
-| 1.1 | July 23, 2026 | This PRD update | Preserved the as-built requirements and reorganized them as a living PRD with capability, undesirable-event, risk, mitigation, ABC-requirement, and traceability structures required by Prompt 01. | Zixuan Liang |
+| 1.1 | July 23, 2026 | `9dfa7bf` | Preserved the as-built requirements and reorganized them as a living PRD with capability, undesirable-event, risk, mitigation, ABC-requirement, and traceability structures required by Prompt 01. | Zixuan Liang |
+| 1.2 | July 23, 2026 | This document-only follow-up | Updated the cover page to identify the clean application baseline after the previously Unreleased working-tree artifacts were committed. | Zixuan Liang |
 
 ## Table of Contents
 
@@ -744,7 +745,7 @@ The authoritative concise interface table appears in Section 13.3. Detailed acce
 
 ## D.2 Verification Snapshot
 
-At document version 1.1:
+At document version 1.2:
 
 - Pytest result: 11 passed.
 - Formal system scenarios: 6 passed, 0 failed.
